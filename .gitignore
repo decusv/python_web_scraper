@@ -11,10 +11,10 @@ build
 
 # old stages
 /Web Scraper/*
-!/Web Scraper/task/
-/Web Scraper/task/*
-!/Web Scraper/task/scraper.py
-!/Web Scraper/task/source.html
-!/Web Scraper/task/Moderna_COVID_vaccine_becomes_second_to_get_US_authorization.txt
-!/Web Scraper/task/Biden’s_pick_to_head_US_environment_agency_heartens_scientists.txt
-!/Web Scraper/task/Is_lightning_striking_the_Arctic_more_than_ever_before.txt
+!/Web Scraper/main/
+/Web Scraper/main/*
+!/Web Scraper/main/scraper.py
+!/Web Scraper/main/source.html
+!/Web Scraper/main/Moderna_COVID_vaccine_becomes_second_to_get_US_authorization.txt
+!/Web Scraper/main/Biden’s_pick_to_head_US_environment_agency_heartens_scientists.txt
+!/Web Scraper/main/Is_lightning_striking_the_Arctic_more_than_ever_before.txt
