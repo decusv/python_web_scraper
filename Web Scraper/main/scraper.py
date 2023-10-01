@@ -5,9 +5,9 @@ from bs4 import BeautifulSoup
 import string
 
 
-def scrape_articles(number_of_pages, type_of_article):
+def scrape_articles(number_of_pages, type_of_article, year):
     for index in range(1, number_of_pages + 1):
-        url = "https://www.nature.com/nature/articles?sort=PubDate&year=2020&page=" + str(index)
+        url = "https://www.nature.com/nature/articles?sort=PubDate&year=" + str(year) + "&page=" + str(index)
         translator = str.maketrans('', '', string.punctuation)
         directory_name = f'Page_{index}'
         os.makedirs(directory_name)
@@ -40,6 +40,7 @@ def scrape_articles(number_of_pages, type_of_article):
             print("Invalid page!")
 
 
-firstParam = int(input("> "))
-secondParam = str(input("> "))
-scrape_articles(firstParam, secondParam)
+scrape_articles(int(input("Number Of Pages: ")),
+                str(input("Type Of Article: ")),
+                int(input("Year of Nature Articles: "))
+                )
